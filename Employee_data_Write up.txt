@@ -1,0 +1,9 @@
+                                                                                                        Employee Training Score Analysis:
+
+
+1) In this project,imported the json file of employee which has been provided.
+2) After importing json file,using mongo shell entered into database of employee and also into the collection of employee data.
+3) Then listing the employees who has failed in term1 i.e employee who score less than 37 and also finding their count.
+4) Finding the average of term1 score using "aggregate" function.
+5) Then next executed the average of employees who passed in all 3 terms using "and" operator.
+6) And finally executed the average of individual employee of all 3 terms using "aggregate" and "$project" command . 

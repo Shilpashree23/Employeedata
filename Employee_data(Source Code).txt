@@ -1,0 +1,19 @@
+Employee_data  Source Code:
+
+1) Changing the path directory into downloads where the file has been saved.
+=> cd downloads
+
+2) C:\Users\nshilpashree\Downloads>mongoimport employee_data.json -d test -c employeedata --drop --jsonArray.
+
+3) C:\Users\nshilpashree\Downloads>mongo
+
+4) db.employeedata.find().count()
+
+5) db.employeedata.find({"term1":{"$lte":37}}).count()
+
+6) db.employeedata.aggregate([{$group:{'_id':'term1',average:{$avg:'$term1'}}}])
+
+7) db.employeedata.find({$and:[{term1:{$gt:37}},{term2:{$gt:37}},{term3:{$gt:37}}]})
+
+8) db.employeedata.aggregate({$project:{avg_emp:{$avg:["$term1","$term2","$term3"]}}})
+
